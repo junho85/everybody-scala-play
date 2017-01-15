@@ -1,4 +1,4 @@
-package test
+package chapter3
 
 object Ex_3_6 {
   def main(args: Array[String]): Unit = {
