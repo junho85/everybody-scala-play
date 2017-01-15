@@ -21,4 +21,10 @@ class Vehicle2(a: Int, b: Int)
 //}
 
 
-// 4.3
+// 4.3 Inheritance
+
+// 4.4 Trait and Abstract class
+
+
+// 4.5 Stackable traits
+
