@@ -9,6 +9,13 @@ object Ex_2_2 {
     println(a)
     println(b)
 
+    // result
+    // 10
+    // 5
+
+    // AnyRef
+    // chapter 4
+
     // type
     type Name = String
     type Person = (String, Int)
