@@ -7,11 +7,13 @@ object Ex_4_2 {
 
     val apple2 = Fruit2("apple")
     println(apple2.name)
+    apple2.name = "hohohihi"
+    println(apple2.name)
   }
 
   class Fruit(input: String) {
     var name = input
   }
 
-  case class Fruit2(name: String)
+  case class Fruit2(var name: String)
 }
