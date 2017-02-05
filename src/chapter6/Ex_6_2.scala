@@ -7,10 +7,12 @@ object Ex_6_2 {
     val person1 = Person("이멋남", 47, "부회장")
     val person2 = Person("김쾌남", 73, "회장")
     val person3 = Person("김솔로", 27, "사원")
+    val person4 = Person("김솔로", 27, "기타")
 
     matchAndHi(person1)
     matchAndHi(person2)
     matchAndHi(person3)
+    matchAndHi(person4)
   }
 
   def matchAndHi(person: Person): Unit = person match {
@@ -19,8 +21,12 @@ object Ex_6_2 {
 //    case Person("김솔로", 27, "넌 누구냐?") => println("어 솔로 왔니?")
 //    case Person("김솔로", 27, _) => println("어 솔로 왔니?")
 //    case Person("김솔로", 27, r) => println(r + "님이 입장하셨습니다.")
-    case Person(name, age, "사원") =>
-      if (age > 25) println(name + " " + age + "살이구나. 선 볼래?")
-    case _ => println("매치되는 결과가 없습니다")
+//    case Person(name, age, "사원") =>
+//      if (age > 25) println(name + " " + age + "살이구나. 선 볼래?")
+    case Person(name, age, "사원") if (age > 25) =>
+      println(name + " " + age + "살이구나. 선 볼래?")
+    case _ =>
+      println("매치되는 결과가 없습니다")
+      println(" " + _)
   }
 }

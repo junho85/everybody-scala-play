@@ -12,5 +12,10 @@ object Ex_5_10 {
     println(something(2))
     println(something.apply(2))
     println(something.method(2))
+
+    implicit def doubleToInt(d: Double) = d.toInt
+    val x: Int = 18.0
   }
+
+
 }
