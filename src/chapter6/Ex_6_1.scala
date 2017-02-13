@@ -12,7 +12,7 @@ object Ex_6_1 {
   def matchFunction(input: Any): Any = input match {
     case 100 => "hundred"
     case "hundred" => 100
-    case etcNumber: Int => "입력값은 100이 아닌 Int형 정수입니다."
+    case etcNumber: Int => "입력값은 100이 아닌 Int형 정수입니다." + etcNumber
     case _ => "기타"
   }
 }

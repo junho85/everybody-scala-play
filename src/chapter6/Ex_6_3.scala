@@ -10,7 +10,7 @@ object Ex_6_3 {
     for (number <- numberList) {
       number match {
         case Emergency() => println("긴급전화입니다.")
-        case Normal(number) => println("일반전화입니다. - " + number)
+        case Normal(extractedNumber) => println("일반전화입니다. - " + extractedNumber)
         case _ => println("판단할 수 없습니다.")
       }
     }
